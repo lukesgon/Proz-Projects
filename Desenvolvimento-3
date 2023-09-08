@@ -1,0 +1,49 @@
+#  Exercício de Lucas da Silva Gonçalves, para o desenvolvimento da atividade número 3, da disciplina de Introdução à Programação, fornecida pelo curso Proz de educação em tecnologia.
+#  Exercise of Lucas da Silva Gonçalves, for the development of activity number 3, of the discipline of Introduction to Programming, provided by the Proz course of education in technology.
+
+'''
+Enunciado: Precisamos imprimir um número para cada andar de um hotel de 20 andares. Porém, o dono do hotel é supersticioso e optou por não ter um 13ro andar. 
+Escreva um código que imprima todos os números exceto o número 13. 
+Escreva mais dois códigos que resolvam o mesmo problema, mas dessa vez usando os outros dois tipos de laços de repetição aprendidos. Como desafio, imprima eles em ordem decrescente (20, 19, 18...)
+
+Statement: We need to print a number for each floor of a 20-story hotel. However, the hotel owner is superstitious and has chosen not to have a 13th floor. Write code that prints all numbers except the number 13.
+Write two more codes that solve the same problem, but this time using the other two types of loops learned. As a challenge, print them in descending order (20, 19, 18...).
+'''
+
+#Solução 1:
+andar = int(input("Por favor, insira o número de andares à serem etiquetados: "))
+
+for andar in range(andar, 0, -1):
+    if andar == 1:
+      print("Andar Térreo")
+      break
+    else:
+      if andar == 13:
+        continue
+    print(f"{andar}º andar")
+
+#Solução 2:
+andar = int(input("Por favor, insira o número de andares a serem etiquetados: "))
+
+while andar > 0:
+    if andar == 1:
+        print("Andar Térreo")
+    else:
+        if andar == 13:
+            andar = andar - 1
+            continue
+        print(f"{andar}º andar")
+    andar = andar - 1
+
+#Solução 3:
+andar = int(input("Por favor, insira o número de andares a serem etiquetados: "))
+
+for contador in range(andar, 0, -1):
+    if contador == 1:
+        print("Andar Térreo")
+    elif contador == 13:
+        continue
+    else:
+        print(f"{contador}º andar")
+
+
