@@ -11,6 +11,7 @@ Write two more codes that solve the same problem, but this time using the other 
 '''
 
 #Solução 1:
+print("Solução 1")
 andar = int(input("Por favor, insira o número de andares à serem etiquetados: "))
 
 for andar in range(andar, 0, -1):
@@ -23,6 +24,7 @@ for andar in range(andar, 0, -1):
     print(f"{andar}º andar")
 
 #Solução 2:
+print("Solução 2")
 andar = int(input("Por favor, insira o número de andares a serem etiquetados: "))
 
 while andar > 0:
@@ -36,6 +38,7 @@ while andar > 0:
     andar = andar - 1
 
 #Solução 3:
+print("Solução 3")
 andar = int(input("Por favor, insira o número de andares a serem etiquetados: "))
 
 for contador in range(andar, 0, -1):
