@@ -11,14 +11,18 @@ def operacao(a, b, c):
     elif a == 4:
         resultado = b / c
     else:
-        resultado = 0  # Valor padrão se a operação não for reconhecida
+        resultado = "Essa opção não existe"  # Valor padrão se a operação não for reconhecida
     return round(resultado, 4)
 
 while True:
     numero1 = int(input("Por favor, escolha a operação: 1-Soma, 2-Subtração, 3-Multiplicação, 4-Divisão, 0-Sair: "))
     
     if numero1 == 0:
+        print("Sistema encerrado")
         break
+    elif numero1 not in (1, 2, 3, 4):
+        print("Essa opção não existe")
+        continue
 
     numero2 = float(input("Por favor, insira o primeiro número a ser calculado: "))
     numero3 = float(input("Por favor, insira o segundo número a ser calculado: "))
