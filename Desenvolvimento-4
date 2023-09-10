@@ -1,0 +1,26 @@
+# Projeto para o desenvolvimento da atividade 4, do curso Proz de Introdução à programação, pelo aluno Lucas da Silva Gonçalves.
+# Project for activity 4, of the course Proz of Introducing Programming by Lucas da Silva Gonçalves.
+
+numero1 = float(input("Por favor, insira o primeiro número a ser calculado: "))
+numero2 = float(input("Por favor, insira o segundo número a ser calculado: "))
+numero3 = int(input("Por favor, escolha a operação: 1-Soma, 2-Subtração, 3-Multiplicação, 4-Divisão: "))
+
+def operacao(numero1, numero2, numero3):
+    if numero3 == 1:
+        resultado = numero1 + numero2
+        return round(resultado, 4)
+    elif numero3 == 2:
+        resultado = numero1 - numero2
+        return round(resultado, 4)
+    elif numero3 == 3:
+        resultado = numero1 * numero2
+        return round(resultado, 4)
+    elif numero3 == 4:
+        resultado = numero1 / numero2
+        return round(resultado, 4)
+    else:
+        resultado = 0  # Valor padrão se a operação não for reconhecida
+        return resultado
+
+resultadoFinal = operacao(numero1, numero2, numero3)
+print(f"O resultado de sua operação é {resultadoFinal}")
