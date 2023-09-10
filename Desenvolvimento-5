@@ -1,0 +1,27 @@
+# Projeto para o desenvolvimento da atividade 5, do curso Proz de Introdução à programação, pelo aluno Lucas da Silva Gonçalves.
+# Project for activity 5, of the course Proz of Introducing Programming by Lucas da Silva Gonçalves.
+
+def operacao(a, b, c):
+    if a == 1:
+        resultado = b + c
+    elif a == 2:
+        resultado = b - c
+    elif a == 3:
+        resultado = b * c
+    elif a == 4:
+        resultado = b / c
+    else:
+        resultado = 0  # Valor padrão se a operação não for reconhecida
+    return round(resultado, 4)
+
+while True:
+    numero1 = int(input("Por favor, escolha a operação: 1-Soma, 2-Subtração, 3-Multiplicação, 4-Divisão, 0-Sair: "))
+    
+    if numero1 == 0:
+        break
+
+    numero2 = float(input("Por favor, insira o primeiro número a ser calculado: "))
+    numero3 = float(input("Por favor, insira o segundo número a ser calculado: "))
+
+    resultadoFinal = operacao(numero1, numero2, numero3)
+    print(f"O resultado de sua operação é {resultadoFinal}")
