@@ -1,0 +1,31 @@
+'''
+Projeto para o desenvolvimento da atividade 6, do curso Proz de Introdução à programação, pelo aluno Lucas da Silva Gonçalves.
+Project for activity 6, of the course Proz of Introducing Programming by Lucas da Silva Gonçalves.
+
+Desenvolva um programa que recebe do usuário nome completo e ano de nascimento que seja entre 1922 e 2021.
+A partir dessas informações, o sistema mostrará o nome do usuário e a idade que completou, ou completará, no ano atual (2022).
+Caso o usuário não digite um número ou apareça um inválido no campo do ano, o sistema informará o erro e continuará perguntando até que um valor correto seja preenchido.
+
+Develop a program that receives from the user the full name and the year of birth, which must be between 1922 and 2021.
+Based on this information, the system will display the user's name and the age they have completed or will complete in the current year (2022).
+If the user does not enter a number or an invalid value appears in the year field, the system will report the error and continue asking until a correct value is entered.
+'''
+
+while True:
+    print("Por favor, insira seus dados: ")
+    try:
+        nome_completo = str(input("Por favor, informe seu nome completo: "))
+        ano_nascimento = int(input("Por favor, informe seu ano de nascimento com quatro dígitos: "))
+
+        if not (1922 <= ano_nascimento <= 2021):
+            raise ValueError("Ano de nascimento fora do intervalo válido (1922-2021)")
+
+        break  # Sai do loop se o ano estiver dentro do intervalo válido
+    except ValueError as e:
+        print(e)
+    except:
+        print("Houve um erro nas informações fornecidas.")
+
+idade = (2022 - ano_nascimento)
+
+print(f"Seu nome é {nome_completo} e você completa {idade} anos de idade no ano de 2022.")
