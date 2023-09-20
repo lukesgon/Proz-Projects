@@ -1,6 +1,6 @@
 '''
-# Projeto para o desenvolvimento da atividade 4, do curso Proz de Introdução à programação, pelo aluno Lucas da Silva Gonçalves.
-# Project for activity 4, of the course Proz of Introducing Programming by Lucas da Silva Gonçalves.
+# Projeto para o desenvolvimento da atividade 7, do curso Proz de Introdução à programação, pelo aluno Lucas da Silva Gonçalves.
+# Project for activity 7, of the course Proz of Introducing Programming by Lucas da Silva Gonçalves.
 
 Declare dois arrays, cada um com um mínimo de cinco elementos, e imprima eles no terminal usando o comando print().
 O primeiro array deve conter os produtos de uma loja da sua escolha (loja de comida, materiais de construção, música,
