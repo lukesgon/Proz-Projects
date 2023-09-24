@@ -18,3 +18,8 @@ lista_produtos[1], lista_produtos[4] = "rímel", "cremes hidratantes"
 lista_produtos.pop()
 
 print(lista_produtos)
+
+lista_produtos.append("pasta de dente")
+lista_produtos.append("gel capilar")
+
+print(lista_produtos)
