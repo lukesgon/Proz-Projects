@@ -1,0 +1,16 @@
+.content {
+    display: flex;
+}
+
+.sideBar {
+    flex: 0.25; /* A barra lateral ocupará 1 unidade de flexibilidade */
+}
+
+.item {
+    flex: 1; /* O conteúdo principal ocupará 2 unidades de flexibilidade */
+}
+
+#iconeTour {
+    width: 54px;
+    height: 24px;
+}
