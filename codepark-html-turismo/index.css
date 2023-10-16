@@ -1,3 +1,12 @@
+body {
+    color: white;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: tahoma;
+}
+
 .content {
     display: flex;
 }
@@ -13,4 +22,8 @@
 #iconeTour {
     width: 54px;
     height: 24px;
+}
+
+li {
+    list-style-type: none;
 }
